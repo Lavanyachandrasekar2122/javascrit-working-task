@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    .parent{
+           color: blue;
+    }
+    .child {
+color:brown 
+   }
+   </style>
+</head>
+<body>
+    <div class="orginal">Parent Element
+        <p> Child Element<p>
+    </div>
+    
+    <script>
+        let OrginalElement = document.querySelector('.orginal');
+        let clonedElement=OrginalElement.cloneNode(true);
+    clonedElement.textContent +="new content";
+    clonedElement.classList.add('cloned');
+
+    document.body.append(clonedElement);
+    </script>
+
+
+   <!-- <p class="heighlight new">This is new xxxxx</p>
+   <p> This is wwwwww</p>
+
+   <h1 class="heighlight" id="h1">HELLO</h1>
+   <div class="heighlight new" >This is newwwwwwwwwwww</div>
+   <p class="heighlight new">This is khfchnndc</p>
+   <div><h1> JS DOM</h1></div>
+
+   <ol class="ol">
+    <li>sssd</li>
+    <li>sssd</li>
+    <li>sssd</li>
+    <li>sssd</li>
+    <li>sssd</li>
+   
+   </ol> -->
+    <script src="script.js"></script>
+</body>
+</html>
